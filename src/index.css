@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 30% 25%; /* Lighter background */
+    --foreground: 210 40% 98%;
+
+    --card: 250 30% 28%; /* Slightly lighter than background */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 250 30% 28%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 252 83% 90%; /* Lighter soft purple */
+    --primary-foreground: 250 30% 25%;
+
+    --secondary: 250 30% 32%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 250 30% 32%;
+    --muted-foreground: 215 20.2% 80%; /* Lighter muted text */
+
+    --accent: 252 83% 90%;
+    --accent-foreground: 250 30% 25%;
+
+    --destructive: 0 62.8% 45%; /* Slightly lighter destructive */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 250 30% 32%;
+    --input: 250 30% 32%;
+    --ring: 252 83% 90%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 250 30% 25%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 252 83% 90%;
+    --sidebar-primary-foreground: 250 30% 25%;
+    --sidebar-accent: 250 30% 32%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 250 30% 32%;
+    --sidebar-ring: 252 83% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  ::selection {
+    @apply bg-highlight text-background;
+  }
+}
